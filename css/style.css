@@ -25,8 +25,10 @@ h1,
 h3 {
     color: white;
 }
-h3 {font-size: 1.25em}
+h3 {font-size: 1.25em;}
+
 .star_red {color: #F03434;}
+
 .divider {
     border-bottom: 3px solid #404c58;
     padding-top: 40px;
