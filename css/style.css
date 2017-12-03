@@ -23,6 +23,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.cover {width:100%;}
 .mobile {display: none;}
 html,
 body {
@@ -120,7 +121,7 @@ main {
 .about p,
 .education p {
     line-height: 1.7;
-    font-size: 22px;
+    font-size: 21px;
     letter-spacing: -0.4px;
 }
 p {
