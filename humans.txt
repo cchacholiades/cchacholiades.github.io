@@ -1,0 +1,10 @@
+/* TEAM */
+  Web developer: Chris Chacholiades
+  Twitter: @cchacholiades
+  From: Nicosia, Cyprus
+
+/* SITE */
+  Last update:03/12/2017
+  Language: English
+  Doctype: HTML5
+  IDE: Sublime Text 2
