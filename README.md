@@ -4,4 +4,4 @@ Informational website for Stefanos Yiassemides music. Hosted on github pages.
 
 ## Authors
 
-**Chris Chacholiades** - [cchacholiades](https://github.com/cchacholiades)
+[cchacholiades](https://github.com/cchacholiades)
