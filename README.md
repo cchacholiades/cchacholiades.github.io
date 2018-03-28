@@ -1,4 +1,4 @@
-# Website for https://stefanosyiassemides.com/
+# Web for https://stefanosyiassemides.com/
 
 Informational website for Stefanos Yiassemides music. Hosted on github pages.
 
