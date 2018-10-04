@@ -341,9 +341,7 @@ p.disclaimer a {
 }
 .content img {
     display: inline-block;
-    width: 230px;
-    width: 130px;
-    /* margin: 0 auto; */
+    width: 100px;
     margin-right: 10px;
 }
 .content h3,
