@@ -219,7 +219,8 @@ p.disclaimer {
 }
 @media all and (min-width: 830px) {
   html {
-    background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;
+    background: url(../images/stefis.jpg) no-repeat center center fixed;
+    background-size: cover;
   }
   .logo {
     position: fixed;
