@@ -3,6 +3,9 @@
 
 html {
   background: #333;
+  background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;
+  background-size: cover;
+  box-sizing: content-box;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   color: white;
