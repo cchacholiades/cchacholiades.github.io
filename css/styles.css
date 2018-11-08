@@ -3,9 +3,9 @@
 
 html {
   background: #333;
-  background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;
-  background-size: cover;
-  box-sizing: content-box;
+  /*background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;*/
+  /*background-size: cover;*/
+  /*box-sizing: content-box;*/
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -75,7 +75,7 @@ iframe {
 
 .content {
   width: 100%;
-  background: #000000c2;
+  background: #1c1c1cc2;
   z-index: 100;
 }
 
