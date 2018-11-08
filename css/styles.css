@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html {
-  background: url(../images/stefis.jpg) no-repeat center center fixed;
+  background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -218,6 +218,9 @@ p.disclaimer {
   margin-top: 5px;
 }
 @media all and (min-width: 830px) {
+  html {
+    background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;
+  }
   .logo {
     position: fixed;
     left: 20px;
