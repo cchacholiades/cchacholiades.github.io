@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+  background: url(../images/stefis.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+  line-height: 1.65em;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+iframe {
+  overflow: hidden;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.contact, footer a, .disclaimer a {
+  font-weight: 700;
+  color: #ffca3d;
+  .text-decoration: none;
+}
+
+.contact:hover, footer a:hover, .disclaimer a:hover {
+  color: #ff3300;
+}
+
+.divider {
+  background: #444;
+  height: 1px;
+}
+
+.h--divider {
+  background: #444;
+  width: 3px;
+  max-height: 100%;
+  height: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  width: 100%;
+  background: #212121f2;
+  z-index: 100;
+}
+
+.logo {
+  width: 100%;
+  bottom: 20px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.text strong {
+  -webkit-transition: ease 0.2s all;
+  -o-transition: ease 0.2s all;
+  transition: ease 0.2s all;
+  font-size: 1.8em;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.8px;
+  line-height: 1.3em;
+  font-family: 'Permanent Marker', cursive;
+  border-top: 10px solid #ffcc5b;
+  padding-top: 10px;
+}
+
+.text p {
+    margin: 0;
+    padding: 0;
+}
+
+.text h3 {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.music, .about, .portfolio-wrap {
+  padding: 20px;
+}
+
+a.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.item {
+}
+
+.item a {
+  color: white;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.desc p {
+  margin: 0;
+}
+.item h3 {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+}
+
+.item img {
+  max-width: 120px;
+  border-radius: 0.4em;
+  margin-top: 20px;
+}
+
+.item .desc {
+    padding-left: 15px;
+}
+
+/*PHOTOSWIPE*/
+.pswp__zoom-wrap {
+  text-align: center;
+}
+.pswp__zoom-wrap:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.wrap {
+  line-height: 0;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  width: 100%;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+/*PHOTOSWIPE*/
+
+#footer {
+  color: #75797d;
+  font-size: 12px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+p.disclaimer {
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 10px;
+  color: #75797d;
+  line-height: 1.2em;
+  margin-top: 5px;
+}
+@media all and (min-width: 830px) {
+  .logo {
+    position: fixed;
+    left: 20px;
+  }
+  .main-container {
+    padding-right: 25px;
+  }
+  .content {
+    width: 55%;
+    margin-left: auto;
+    padding: 20px;
+  }
+  .item a {
+    /*align-items: center;*/
+  }
+  .item img {
+    /*margin-top: 5px;*/
+  }
+  .text strong {
+   font-size: 2em;
+  }
+}
+
+@media all and (max-width:1100px) and (min-width: 830px) {
+  .text strong {
+    font-size: 1.5em;
+  }
+}
