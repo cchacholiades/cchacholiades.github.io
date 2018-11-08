@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html {
-  /*background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;*/
-  /*background-size: cover;*/
   background: #333;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -45,6 +43,7 @@ iframe {
 .divider {
   background: #444;
   height: 1px;
+  margin-top: 20px;
 }
 
 .h--divider {
@@ -73,7 +72,7 @@ iframe {
 
 .content {
   width: 100%;
-  background: #212121f2;
+  background: #000000c2;
   z-index: 100;
 }
 
@@ -227,6 +226,7 @@ p.disclaimer {
     display: none;
   }
   html {
+    background: #333;
     background: url(../images/stefis.jpg) no-repeat center center fixed;
     background-size: cover;
   }
