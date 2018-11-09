@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-html {
-  background: #333;
-  /*background: url(../images/stefis-mobile.jpg) no-repeat center center fixed;*/
-  /*background-size: cover;*/
-  /*box-sizing: content-box;*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
   height: 100%;
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 15px;
+  background-color: #333;
+  -webkit-text-size-adjust: 100%;
   line-height: 1.65em;
-  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: url(../images/stefis.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 h2 {
@@ -20,6 +35,11 @@ h2 {
   margin-top: 0px;
   margin-bottom: 20px;
   font-size: 2em;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 1.8em;
 }
 
 iframe {
@@ -74,9 +94,11 @@ iframe {
 }
 
 .content {
-  width: 100%;
   background: #1c1c1cc2;
   z-index: 100;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .logo {
@@ -84,6 +106,8 @@ iframe {
   bottom: 20px;
   position: relative;
   margin-top: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .logo img {
@@ -224,27 +248,35 @@ p.disclaimer {
   color: #75797d;
   line-height: 1.2em;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 @media all and (min-width: 830px) {
   .hide-desktop {
     display: none;
   }
   html {
-    background: #333;
-    background: url(../images/stefis.jpg) no-repeat center center fixed;
-    background-size: cover;
+    /*background: #333;*/
+    /*background: url(../images/stefis.jpg) no-repeat center center fixed;*/
+    /*background-size: cover;*/
+  }
+  p {
+    font-size: 1em;
   }
   .logo {
     position: fixed;
     left: 20px;
   }
   .main-container {
-    padding-right: 15px;
+    padding-right: 20px;
   }
   .content {
     width: 55%;
     margin-left: auto;
     padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .item a {
     /*align-items: center;*/
@@ -265,6 +297,6 @@ p.disclaimer {
     font-size: 1.0em;
   }
   .text p {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 }
