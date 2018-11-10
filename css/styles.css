@@ -99,6 +99,7 @@ iframe {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 10;
+  position: relative;
 }
 
 .content {
