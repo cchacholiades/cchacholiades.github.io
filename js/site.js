@@ -263,24 +263,18 @@ if ($('#back-to-top').length) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 700);
-        $('.bg').removeClass('blur-bg');
-
+        }, 500);
     });
 }
 
-
 $(function () {
-   var $win = $(window);
-
+   var $win = $('body');
    $win.scroll(function () {
        if ($win.scrollTop() == 0) {
           $('.bg').removeClass('blur-bg');
        }
-       // top bottom
-       // else if ($win.height() + $win.scrollTop()
-       //                == $(document).height()) {
-       // }
+       // reached bottom
+       // ($win.height() + $win.scrollTop() == $(document).height())
    });
 });
 
