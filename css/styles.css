@@ -33,6 +33,11 @@ html, body {
   position: fixed;
   top: 0;
   bottom: 0;
+  -webkit-transition: -webkit-filter ease-out 0.5s;
+  transition: -webkit-filter ease-out 0.5s;
+  -o-transition: filter ease-out 0.5s;
+  transition: filter ease-out 0.5s;
+  transition: filter ease-out 0.5s, -webkit-filter ease-out 0.5s
 }
 
 h2 {
@@ -105,6 +110,10 @@ iframe {
   position: relative;
 }
 
+.blur-bg {
+  -webkit-filter: blur(35px);
+          filter: blur(35px);
+}
 .content {
   background: #252525d1;
   border-radius: 6px;
@@ -185,12 +194,19 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .item .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: #1d1d1d;
   border-radius: 8px;
