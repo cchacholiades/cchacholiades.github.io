@@ -331,7 +331,6 @@ p.disclaimer {
   font-size: 10px;
   color: #75797d;
   line-height: 1.3em;
-  margin-bottom: 10px;
 }
 @media all and (min-width: 830px) {
   .hide-desktop {
