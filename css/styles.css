@@ -41,9 +41,13 @@ html, body {
 }
 
 .back-to-top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #back-to-top {
   position: relative;
@@ -61,6 +65,8 @@ html, body {
   padding: 10px;
   text-decoration: none;
   font-size: 1.5em;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 
