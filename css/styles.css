@@ -40,6 +40,37 @@ html, body {
   transition: filter ease-out 0.4s, -webkit-filter ease-out 0.4s
 }
 
+.back-to-top-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#back-to-top {
+  position: relative;
+  z-index: 200;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #333;
+  color: #ffcc5b;
+  cursor: pointer;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: opacity 0.2s ease-out;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}
+#content {
+  height: 2000px;
+}
+
 h2 {
   font-family: 'Permanent Marker', cursive;
   color: white;
@@ -73,8 +104,17 @@ iframe {
   .text-decoration: none;
 }
 
-.contact:hover, footer a:hover, .disclaimer a:hover, .item a:hover .img-container h3 {
+.contact:hover, footer a:hover,
+.disclaimer a:hover,
+.item a:hover .img-container h3,
+#back-to-top:hover
+{
   color: #ff3300;
+}
+
+#back-to-top:hover
+{
+  border: 2px solid #ff3300;
 }
 
 .divider {

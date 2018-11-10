@@ -245,6 +245,43 @@ $(document).ready(function() {
 
  initPhotoSwipeFromDOM('.photoswipe-wrapper');
 
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+
+
+$(function () {
+   var $win = $(window);
+
+   $win.scroll(function () {
+       if ($win.scrollTop() == 0) {
+          $('.bg').removeClass('blur-bg');
+       }
+       // top bottom
+       // else if ($win.height() + $win.scrollTop()
+       //                == $(document).height()) {
+       // }
+   });
+});
+
 $('body').scroll(function (event) {
     var scroll = $('body').scrollTop();
     if (scroll == 0) {
@@ -252,19 +289,4 @@ $('body').scroll(function (event) {
     } else {
       $('.bg').addClass('blur-bg');
     }
-});
-
-$(document).ready(function()
-{
-    $('body').scroll(function()
-    {
-        var div = $(this);
-        if (div[0].scrollHeight - div.scrollTop() == div.height())
-        {
-        }
-        else if(div.scrollTop() == 0)
-        {
-            $('.bg').removeClass('blur-bg');
-        }
-    });
 });
