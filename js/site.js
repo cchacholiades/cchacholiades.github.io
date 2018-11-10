@@ -245,7 +245,7 @@ $(document).ready(function() {
 
  initPhotoSwipeFromDOM('.photoswipe-wrapper');
 
-$('body').scroll(function (event) {
+$("body").scroll(function (event) {
     var scroll = $(window).scrollTop();
     $('.bg').addClass('blur-bg');
 });

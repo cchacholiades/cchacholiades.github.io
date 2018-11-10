@@ -33,11 +33,11 @@ html, body {
   position: fixed;
   top: 0;
   bottom: 0;
-  -webkit-transition: -webkit-filter ease-out 0.5s;
-  transition: -webkit-filter ease-out 0.5s;
-  -o-transition: filter ease-out 0.5s;
-  transition: filter ease-out 0.5s;
-  transition: filter ease-out 0.5s, -webkit-filter ease-out 0.5s
+  -webkit-transition: -webkit-filter ease-out 0.4s;
+  transition: -webkit-filter ease-out 0.4s;
+  -o-transition: filter ease-out 0.4s;
+  transition: filter ease-out 0.4s;
+  transition: filter ease-out 0.4s, -webkit-filter ease-out 0.4s
 }
 
 h2 {
