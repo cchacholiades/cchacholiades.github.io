@@ -247,7 +247,11 @@ $(document).ready(function() {
 
 $('body').scroll(function (event) {
     var scroll = $('body').scrollTop();
-    $('.bg').addClass('blur-bg');
+    if (scroll == 0) {
+      $('.bg').removeClass('blur-bg');
+    } else {
+      $('.bg').addClass('blur-bg');
+    }
 });
 
 $(document).ready(function()
