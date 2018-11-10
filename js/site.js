@@ -245,11 +245,6 @@ $(document).ready(function() {
 
  initPhotoSwipeFromDOM('.photoswipe-wrapper');
 
-$("body").scroll(function (event) {
-    var scroll = $(window).scrollTop();
-    $('.bg').addClass('blur-bg');
-});
-
 $(document).ready(function()
 {
     $("body").scroll(function()
@@ -257,6 +252,7 @@ $(document).ready(function()
         var div = $(this);
         if (div[0].scrollHeight - div.scrollTop() == div.height())
         {
+          $('.bg').addClass('blur-bg');
         }
         else if(div.scrollTop() == 0)
         {
