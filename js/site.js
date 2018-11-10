@@ -264,6 +264,8 @@ if ($('#back-to-top').length) {
         $('html,body').animate({
             scrollTop: 0
         }, 700);
+        $('.bg').removeClass('blur-bg');
+
     });
 }
 
