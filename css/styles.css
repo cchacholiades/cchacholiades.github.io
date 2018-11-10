@@ -55,6 +55,9 @@ iframe {
   width: 100%;
 }
 
+.about p {
+  margin-bottom: 10px;
+}
 .full-width {
   width: 100% !important;
 }
@@ -65,7 +68,7 @@ iframe {
   .text-decoration: none;
 }
 
-.contact:hover, footer a:hover, .disclaimer a:hover {
+.contact:hover, footer a:hover, .disclaimer a:hover, .item a:hover .img-container h3 {
   color: #ff3300;
 }
 
@@ -141,6 +144,7 @@ iframe {
     margin: 0;
     padding: 0;
     font-size: 0.9em;
+    text-shadow: 0 0 8px #00000087;
 }
 
 .text h3 {
@@ -180,26 +184,33 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  flex-direction: column;
+}
+
+.item .img-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #1d1d1d;
+  border-radius: 8px;
 }
 
 .desc p {
   margin: 0;
+  margin-top: 5px;
 }
 .item h3 {
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: 900;
   letter-spacing: 1.2px;
-  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .item img {
-  max-width: 120px;
+  max-width: 60px;
+  max-height: 60px;
   border-radius: 0.4em;
-  /*margin-top: 20px;*/
-}
-
-.item .desc {
-    padding-left: 15px;
 }
 
 /*PHOTOSWIPE*/
@@ -300,8 +311,7 @@ p.disclaimer {
     font-size: 1.2em;
   }
   .item h3 {
-    margin-bottom: 10px;
-    font-size: 17px;
+    font-size: 1em;
   }
 }
 
