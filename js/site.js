@@ -1,4 +1,19 @@
 $(document).ready(function() {
+   var $win = $('html');
+   $win.scroll(function () {
+       if ($win.scrollTop() == 0) {
+          $('.bg').removeClass('blur-bg');
+       }
+   });
+  $('body').scroll(function (event) {
+      var scroll = $('body').scrollTop();
+      if (scroll == 0) {
+        $('.bg').removeClass('blur-bg');
+      } else {
+        $('.bg').addClass('blur-bg');
+      }
+  });
+
 
 });
  // $('.photoswipe-wrapper').each(function() {
@@ -267,22 +282,5 @@ if ($('#back-to-top').length) {
     });
 }
 
-$(function () {
-   var $win = $('body');
-   $win.scroll(function () {
-       if ($win.scrollTop() == 0) {
-          $('.bg').removeClass('blur-bg');
-       }
-       // reached bottom
-       // ($win.height() + $win.scrollTop() == $(document).height())
-   });
-});
 
-$('body').scroll(function (event) {
-    var scroll = $('body').scrollTop();
-    if (scroll == 0) {
-      $('.bg').removeClass('blur-bg');
-    } else {
-      $('.bg').addClass('blur-bg');
-    }
-});
+
