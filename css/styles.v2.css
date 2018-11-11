@@ -47,7 +47,7 @@ html, body {
 }
 
 .bg {
-  background: url(../images/stefis.jpg);
+  background: url(../images/stefis-bw-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -56,17 +56,11 @@ html, body {
   position: fixed;
   top: 0;
   bottom: 0;
-/*  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter linear 0.4s;
-  transition: -webkit-filter linear 0.4s;
-  -o-transition: filter linear 0.4s;
-  transition: filter linear 0.4s;
-  transition: filter linear 0.4s, -webkit-filter linear 0.4s;*/
-   -webkit-filter: grayscale(100%);
-   -moz-filter: grayscale(100%);
-   filter: grayscale(100%);
-   transition: all 0.4s ease;
+  -webkit-transition: -webkit-filter linear 0.3s;
+  transition: -webkit-filter linear 0.3s;
+  -o-transition: filter linear 0.3s;
+  transition: filter linear 0.3s;
+  transition: filter linear 0.3s, -webkit-filter linear 0.3s;
 }
 
 .back-to-top-container {
@@ -186,11 +180,9 @@ iframe {
 }
 
 .blur-bg {
-/*  -webkit-filter: blur(35px) grayscale(100%);
-          filter: blur(35px) grayscale(100%);*/
-   -webkit-filter: grayscale(100%) blur(35px);
-   -moz-filter: grayscale(100%) blur(35px);
-   filter: grayscale(100%) blur(35px);
+   -webkit-filter: blur(35px);
+   -moz-filter: blur(35px);
+   filter: blur(35px);
 }
 .content {
   background: rgba(37,37,37,0.82);
