@@ -237,10 +237,11 @@ iframe {
     text-shadow: 0 0 8px #00000087;
 }
 
-.text h3 {
+.text h1 {
   margin: 0;
   margin-top: 10px;
   padding: 0;
+  font-size: 1.17em;
 }
 
 .music, .about, .portfolio-wrap {
