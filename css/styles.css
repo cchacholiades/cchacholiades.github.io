@@ -42,11 +42,13 @@ html, body {
   position: fixed;
   top: 0;
   bottom: 0;
-  -webkit-transition: -webkit-filter ease-out 0.4s;
-  transition: -webkit-filter ease-out 0.4s;
-  -o-transition: filter ease-out 0.4s;
-  transition: filter ease-out 0.4s;
-  transition: filter ease-out 0.4s, -webkit-filter ease-out 0.4s
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: -webkit-filter linear 0.4s;
+  transition: -webkit-filter linear 0.4s;
+  -o-transition: filter linear 0.4s;
+  transition: filter linear 0.4s;
+  transition: filter linear 0.4s, -webkit-filter linear 0.4s;
 }
 
 .back-to-top-container {
@@ -167,8 +169,8 @@ iframe {
 }
 
 .blur-bg {
-  -webkit-filter: blur(35px);
-          filter: blur(35px);
+  -webkit-filter: blur(35px) grayscale(1);
+          filter: blur(35px) grayscale(1);
 }
 .content {
   background: #252525d1;
