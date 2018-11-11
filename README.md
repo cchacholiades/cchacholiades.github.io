@@ -1,6 +1,8 @@
 # Web for https://stefanosyiassemides.com/
 
-Informational website for Stefanos Yiassemides music. Hosted on github pages.
+Website for Stefanos Yiassemides music. Hosted on github pages.
+
+![Image of site](/images/site_screenshot.jpg)
 
 ## Authors
 
