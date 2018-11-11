@@ -1,20 +1,22 @@
 $(document).ready(function() {
-   var $win = $('html');
-   $win.scroll(function () {
-       if ($win.scrollTop() == 0) {
-          $('.bg').removeClass('blur-bg');
-       }
-   });
-  $('body').scroll(function (event) {
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  // disable blur stuff on anything else except chrome
+  if (isChrome) {
+    var $win = $('html');
+    $win.scroll(function () {
+        if ($win.scrollTop() == 0) {
+            $('.bg').removeClass('blur-bg');
+        }
+    });
+    $('body').scroll(function (event) {
       var scroll = $('body').scrollTop();
       if (scroll == 0) {
         $('.bg').removeClass('blur-bg');
       } else {
         $('.bg').addClass('blur-bg');
       }
-  });
-
-
+    });
+  }
 });
  // $('.photoswipe-wrapper').each(function() {
  //  $(this).find('a').each(function() {
@@ -261,21 +263,8 @@ $(document).ready(function() {
  initPhotoSwipeFromDOM('.photoswipe-wrapper');
 
 if ($('#back-to-top').length) {
-    var scrollTrigger = 100, // px
-        backToTop = function () {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > scrollTrigger) {
-                $('#back-to-top').addClass('show');
-            } else {
-                $('#back-to-top').removeClass('show');
-            }
-        };
-    backToTop();
-    $(window).on('scroll', function () {
-        backToTop();
-    });
     $('#back-to-top').on('click', function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
         }, 500);
