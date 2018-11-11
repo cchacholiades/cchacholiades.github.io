@@ -179,7 +179,7 @@ iframe {
    filter: grayscale(100%) blur(35px);
 }
 .content {
-  background: #252525d1;
+  background: rgba(37,37,37,0.82);
   border-radius: 6px;
   z-index: 100;
   margin-left: 15px;
