@@ -1,6 +1,5 @@
-/* TEAM */
-  Development + Design: Chris Chacholiades
-  Twitter: @cchacholiades
+Development + Design: Chris Chacholiades
+Twitter: @cchacholiades
 
 /* SITE */
   Last update: 08/11/2018
