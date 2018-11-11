@@ -1,28 +1,26 @@
+var body = $('body');
+
+var scrolled = false;
+
+$(window).scroll(function() {
+
+    //if I scroll more than 1000px...
+    if($(window).scrollTop() > 10 && scrolled == false){
+      $('.bg').addClass('blur-bg');
+      scrolled = true;
+    } else if($(window).scrollTop() == 0) {
+      $('.bg').removeClass('blur-bg');
+      scrolled = false;
+    }
+});
+
 $(document).ready(function() {
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  // disable blur stuff on anything else except chrome
-  if (isChrome) {
-    var $win = $('html');
-    $win.scroll(function () {
-        if ($win.scrollTop() == 0) {
-            $('.bg').removeClass('blur-bg');
-        }
-    });
-    $('body').scroll(function (event) {
-      var scroll = $('body').scrollTop();
-      if (scroll == 0) {
-        $('.bg').removeClass('blur-bg');
-      } else {
-        $('.bg').addClass('blur-bg');
-      }
-    });
+  if ($('.bg').hasClass('blur-bg') && (body.scrollTop() === 0)) {
+    $('.bg').removeClass('blur-bg');
+  } else {
+    $('.bg').addClass('blur-bg');
   }
 });
- // $('.photoswipe-wrapper').each(function() {
- //  $(this).find('a').each(function() {
- //    $(this).attr('data-size', $(this).find('img').get(0).naturalWidth + 'x' + $(this).find('img').get(0).naturalHeight);
- //  });
- // });
 
  var initPhotoSwipeFromDOM = function(gallerySelector) {
 
