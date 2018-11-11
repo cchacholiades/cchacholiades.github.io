@@ -42,13 +42,17 @@ html, body {
   position: fixed;
   top: 0;
   bottom: 0;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+/*  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   -webkit-transition: -webkit-filter linear 0.4s;
   transition: -webkit-filter linear 0.4s;
   -o-transition: filter linear 0.4s;
   transition: filter linear 0.4s;
-  transition: filter linear 0.4s, -webkit-filter linear 0.4s;
+  transition: filter linear 0.4s, -webkit-filter linear 0.4s;*/
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+   transition: all 0.5s ease;
 }
 
 .back-to-top-container {
@@ -62,7 +66,6 @@ html, body {
 }
 #back-to-top {
   position: relative;
-  z-index: 200;
   width: 32px;
   height: 32px;
   text-align: center;
@@ -169,8 +172,11 @@ iframe {
 }
 
 .blur-bg {
-  -webkit-filter: blur(35px) grayscale(1);
-          filter: blur(35px) grayscale(1);
+/*  -webkit-filter: blur(35px) grayscale(100%);
+          filter: blur(35px) grayscale(100%);*/
+   -webkit-filter: grayscale(100%) blur(35px);
+   -moz-filter: grayscale(100%) blur(35px);
+   filter: grayscale(100%) blur(35px);
 }
 .content {
   background: #252525d1;
@@ -348,6 +354,7 @@ p.disclaimer {
   line-height: 1.3em;
   padding-bottom: 10px;
 }
+
 @media all and (min-width: 830px) {
   .hide-desktop {
     display: none;
