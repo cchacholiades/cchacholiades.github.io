@@ -3,8 +3,6 @@ var body = $('body');
 var scrolled = false;
 
 $(window).scroll(function() {
-
-    //if I scroll more than 1000px...
     if($(window).scrollTop() > 10 && scrolled == false){
       $('.bg').addClass('blur-bg');
       scrolled = true;
