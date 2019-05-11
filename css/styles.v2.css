@@ -21,6 +21,10 @@
   border: 0;
 }
 
+img {
+  width: 100%;
+}
+
 html, body {
   background-color: #333;
   /*overflow-x: hidden;*/
@@ -36,6 +40,8 @@ html, body {
   font-smoothing: antialiased;
   /*-webkit-overflow-scrolling: touch;*/
 }
+
+span.inline-title-label {color: #737373;font-size: 12px;}
 
 .socials {
   padding-top: 10px;
@@ -90,6 +96,7 @@ html, body {
   -webkit-transition: opacity 0.2s ease-out;
   -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
+  margin-top: 20px;
 }
 
 #back-to-top.show {
@@ -277,16 +284,70 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   background-color: #1d1d1d;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
+.link {
+  font-weight: 700;
+  color: #ffca3d !important;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+p.genre-label {
+    color: white;
+    font-size: 11px;
+    background: #464646;
+    width: fit-content;
+    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.desc-links {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 26px;
+}
+
+/*.desc-links a {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  border-right: 1px solid #565656;
+}
+
+.desc-links a:first-of-type {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.desc-links a:last-of-type {
+  text-align: right;
+  align-items: flex-end;
+  border-right:0;
+}
+*/
 .desc p {
   margin: 0;
   margin-top: 5px;
+}
+.desc img {
+  margin-top: 10px;
+  border-radius: 8px;
 }
 .item h3 {
   font-size: 0.8em;
@@ -296,12 +357,21 @@ a {
   margin-right: 10px;
 }
 
-.item img {
+.desc {
+    background: #222;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.item .img-container img {
   max-width: 60px;
   max-height: 60px;
   border-radius: 0.4em;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
 }
 
 /*PHOTOSWIPE*/
