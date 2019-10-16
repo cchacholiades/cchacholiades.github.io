@@ -2,7 +2,7 @@ Development + Design: Chris Chacholiades
 Twitter: @cchacholiades
 
 /* SITE */
-  Last update: 11/05/2019
+  Last updated: 16/10/2019
   Language: English
   Doctype: HTML5
   IDE: Sublime Text 3

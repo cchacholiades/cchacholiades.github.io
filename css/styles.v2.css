@@ -264,7 +264,7 @@ a {
 .item {
 }
 
-.item a {
+.item a:not(.inline-link) {
   color: white;
   text-decoration: none;
   display: -webkit-box;
@@ -461,9 +461,6 @@ p.disclaimer {
     padding-right: 5px;
     margin-top: 25px;
     margin-bottom: 25px;
-  }
-  .item a {
-    /*align-items: center;*/
   }
   .item img {
     /*margin-top: 5px;*/
