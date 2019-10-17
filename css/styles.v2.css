@@ -97,6 +97,9 @@ span.inline-title-label {color: #737373;font-size: 12px;}
   -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #back-to-top.show {
