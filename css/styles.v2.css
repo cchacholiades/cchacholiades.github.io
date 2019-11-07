@@ -1,6 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');*/
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
-
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -27,7 +24,6 @@ img {
 
 html, body {
   background-color: #333;
-  /*overflow-x: hidden;*/
   width: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -38,7 +34,6 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  /*-webkit-overflow-scrolling: touch;*/
 }
 
 span.inline-title-label {color: #737373;font-size: 12px;}
@@ -269,7 +264,7 @@ a {
 
 .item a:not(.inline-link) {
   color: white;
-  text-decoration: none;
+  /*text-decoration: none;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,32 +322,16 @@ p.genre-label {
   line-height: 26px;
 }
 
-/*.desc-links a {
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  border-right: 1px solid #565656;
-}
-
-.desc-links a:first-of-type {
-  text-align: left;
-  align-items: flex-start;
-}
-
-.desc-links a:last-of-type {
-  text-align: right;
-  align-items: flex-end;
-  border-right:0;
-}
-*/
 .desc p {
   margin: 0;
   margin-top: 5px;
 }
+
 .desc img {
   margin-top: 10px;
   border-radius: 8px;
 }
+
 .item h3 {
   font-size: 0.8em;
   font-weight: 900;
@@ -382,12 +361,14 @@ p.genre-label {
 .pswp__zoom-wrap {
   text-align: center;
 }
+
 .pswp__zoom-wrap:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
+
 .wrap {
   line-height: 0;
   width: 100%;
@@ -399,6 +380,7 @@ p.genre-label {
   text-align: left;
   z-index: 1045;
 }
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -407,6 +389,7 @@ p.genre-label {
   height: 0;
   width: 100%;
 }
+
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -414,6 +397,7 @@ p.genre-label {
   width: 100%;
   height: 100%;
 }
+
 video {
   width: 100% !important;
   height: auto !important;
@@ -426,6 +410,7 @@ video {
   padding: 20px;
   padding-bottom: 0;
 }
+
 p.disclaimer {
   padding-right: 20px;
   padding-left: 20px;
@@ -439,22 +424,21 @@ p.disclaimer {
   .hide-desktop {
     display: none;
   }
-  html {
-    /*background: #333;*/
-    /*background: url(../images/stefis.jpg) no-repeat center center fixed;*/
-    /*background-size: cover;*/
-  }
+
   p {
     font-size: 1.1em;
     line-height: 1.8em;
   }
+
   .logo {
     position: fixed;
     left: 20px;
   }
+
   .main-container {
     padding-right: 15px;
   }
+
   .content {
     width: 55%;
     margin-left: auto;
@@ -465,19 +449,20 @@ p.disclaimer {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  .item img {
-    /*margin-top: 5px;*/
-  }
+
   .text strong {
    font-size: 2em;
   }
+
   .text p {
     font-size: 1.2em;
     margin-top: 0;
   }
+
   .item h3 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
+
   .socials a {
     font-size: 1.8em;
   }
@@ -487,13 +472,16 @@ p.disclaimer {
   .text strong {
     font-size: 1.0em;
   }
+
   .text p {
     font-size: 0.9em;
   }
+
   .socials a {
     font-size: 1.4em;
     margin-right: 0.6em;
   }
+
   p {
     font-size: 1em;
     line-height: 1.8em;
