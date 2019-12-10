@@ -110,6 +110,7 @@ h2 {
   margin-top: 0px;
   margin-bottom: 20px;
   font-size: 2em;
+  color: #ffcd5a;
 }
 
 p {
@@ -338,6 +339,12 @@ p.genre-label {
   letter-spacing: 1.2px;
   margin-left: 10px;
   margin-right: 10px;
+  display: flex;
+  width: 70%;
+}
+
+.item h3 span {
+  margin-left: auto;
 }
 
 .desc {
