@@ -371,7 +371,6 @@ p.genre-label {
 }
 
 .image-crop {
-  height: 260px;
   display: flex;
 }
 
@@ -379,7 +378,7 @@ p.genre-label {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .fit-bottom {
@@ -410,6 +409,9 @@ p.genre-label {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding-bottom: 40px;
+}
+.item img {
+  object-fit: cover;
 }
 
 .item .img-container img {
@@ -486,6 +488,10 @@ p.disclaimer {
 @media all and (min-width: 830px) {
   .hide-desktop {
     display: none;
+  }
+
+  .image-crop {
+    height: 260px;
   }
 
   .nav {
