@@ -1,3 +1,3 @@
-![Image of site](/images/site_screenshot.jpg)
+![Image of site](/images/site_screenshot.png)
 
 --------------
