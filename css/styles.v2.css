@@ -41,7 +41,7 @@ html, body {
 }
 
 .nav {
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 20px;
   padding-top: 40px;
   font-family: 'Permanent Marker', cursive;
@@ -476,6 +476,10 @@ p.disclaimer {
 @media all and (min-width: 830px) {
   .hide-desktop {
     display: none;
+  }
+
+  .nav {
+    font-size: 2em;
   }
 
   p {
