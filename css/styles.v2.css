@@ -40,6 +40,16 @@ html, body {
   font-smoothing: antialiased;
 }
 
+.nav-fixed {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background: black;
+  left: 0;
+  right: 0;
+  padding-top: 20px !important;
+}
+
 .nav {
   font-size: 1.5em;
   padding: 20px;

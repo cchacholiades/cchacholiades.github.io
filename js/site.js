@@ -12,6 +12,25 @@ $(window).scroll(function() {
     }
 });
 
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top + 100;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(window).on('scroll', function() {
+    if (isScrolledIntoView('#no-scrolled-nav')) {
+        $('#scrolled-nav').addClass('hidden');
+    } else {
+        $('#scrolled-nav').removeClass('hidden');
+    }
+});
+
 function toggle_back_to_top() {
     var ch = $('.content').height();
     var wh = $(window).height() - 50;
