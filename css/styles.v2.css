@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700, 800;
     src: url(../fonts/open_sans/OpenSans-Regular.ttf) format('truetype');
 }
 
@@ -22,11 +22,15 @@ img {
   width: 100%;
 }
 
+.hidden {
+  display: none !important;
+}
+
+
 html, body {
   background-color: #333;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 15px;
   -webkit-text-size-adjust: 100%;
@@ -34,6 +38,24 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+}
+
+.nav {
+  font-size: 2em;
+  padding: 20px;
+  padding-top: 40px;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  justify-content: space-between;
+  color: #ffcb30;
+}
+
+.nav a {
+    color: #ffcb30;
+}
+
+.nav a.selected {
+  color: #ff3737;
 }
 
 span.inline-title-label {color: #737373;font-size: 12px;}
@@ -80,7 +102,7 @@ span.inline-title-label {color: #737373;font-size: 12px;}
   text-align: center;
   line-height: 30px;
   background: #333;
-  color: #ffcc5b;
+  color: #ffcb30;
   cursor: pointer;
   border: 2px solid;
   border-color: transparent;
@@ -110,7 +132,7 @@ h2 {
   margin-top: 0px;
   margin-bottom: 20px;
   font-size: 2em;
-  color: #ffcd5a;
+  color: #ffcb30;
 }
 
 p {
@@ -134,7 +156,7 @@ iframe {
 
 .contact, footer a, .disclaimer a {
   font-weight: 700;
-  color: #ffca3d;
+  color: #ffcb30;
   .text-decoration: none;
 }
 
@@ -191,12 +213,13 @@ iframe {
    filter: blur(35px);
 }
 .content {
-  background: rgba(37,37,37,0.82);
+  background: rgba(37,37,37);
   border-radius: 6px;
   z-index: 100;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -222,7 +245,7 @@ iframe {
   letter-spacing: 1.8px;
   line-height: 1.3em;
   font-family: 'Permanent Marker', cursive;
-  border-top: 10px solid #ffcc5b;
+  border-top: 10px solid #ffcb30;
   padding-top: 10px;
 }
 
@@ -241,7 +264,15 @@ iframe {
   font-size: 1.17em;
 }
 
-.music, .about, .portfolio-wrap {
+.content-block {
+  display: none;
+}
+
+.content-block.visible {
+  display: block;
+}
+
+.music, .about, .works {
   padding: 20px;
 }
 
@@ -293,7 +324,7 @@ a {
 
 .link {
   font-weight: 700;
-  color: #ffca3d !important;
+  color: #ffcb30 !important;
 }
 
 .link:hover {
@@ -432,7 +463,7 @@ p.disclaimer {
   }
 
   p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.8em;
   }
 

@@ -12,16 +12,39 @@ $(window).scroll(function() {
     }
 });
 
+function toggle_back_to_top() {
+    var ch = $('.content').height();
+    var wh = $(window).height() - 50;
+    console.log(ch);
+    console.log(wh);
+    if (ch > wh) {
+        console.log('test')
+        $('#back-to-top').removeClass('hidden');
+    } else {
+        $('#back-to-top').addClass('hidden');
+    }
+}
+
+$('.nav a').on('click', function() {
+    $('.nav a').removeClass('selected');
+    $(this).addClass('selected');
+
+    let link_id = $(this).attr('href').replace('#', '.');
+    $('.content-block').removeClass('visible');
+    $('.content-block' + link_id).addClass('visible');
+    toggle_back_to_top();
+});
+
 $(document).ready(function() {
     if ($('.bg').hasClass('blur-bg') && (body.scrollTop() === 0)) {
         $('.bg').removeClass('blur-bg');
     } else {
         $('.bg').addClass('blur-bg');
     }
+    toggle_back_to_top();
 });
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
-
     // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
     var parseThumbnailElements = function(el) {
