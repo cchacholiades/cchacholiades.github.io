@@ -34,10 +34,8 @@ $(window).on('scroll', function() {
 function toggle_back_to_top() {
     var ch = $('.content').height();
     var wh = $(window).height() - 50;
-    console.log(ch);
-    console.log(wh);
+
     if (ch > wh) {
-        console.log('test')
         $('#back-to-top').removeClass('hidden');
     } else {
         $('#back-to-top').addClass('hidden');
@@ -46,9 +44,12 @@ function toggle_back_to_top() {
 
 $('.nav a').on('click', function() {
     $('.nav a').removeClass('selected');
-    $(this).addClass('selected');
 
-    let link_id = $(this).attr('href').replace('#', '.');
+    let link_id = $(this).attr('href');
+
+    $('.nav a[href="'+link_id+'"]').addClass('selected');
+
+    link_id = link_id.replace('#', '.');
     $('.content-block').removeClass('visible');
     $('.content-block' + link_id).addClass('visible');
     toggle_back_to_top();
