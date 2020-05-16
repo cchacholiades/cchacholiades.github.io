@@ -183,6 +183,18 @@ iframe {
   border: 2px solid #ff3737;
 }
 
+.image-transition {
+  overflow: hidden;
+}
+
+.image-transition img {
+   transition: all 0.2s;
+}
+
+.image-transition img:hover {
+  transform: scale(1.2);
+}
+
 .divider {
   background: #5d5d5d;
   height: 1px;
