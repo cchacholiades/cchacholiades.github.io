@@ -70,7 +70,7 @@ span.inline-title-label {color: #737373;font-size: 12px;}
 }
 
 .bg {
-  background: url(../images/stefis-bw-bg.jpg);
+  background: url(../images/stefis-blue-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -113,7 +113,6 @@ span.inline-title-label {color: #737373;font-size: 12px;}
   -webkit-transition: opacity 0.2s ease-out;
   -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,12 +165,12 @@ iframe {
 #back-to-top:hover,
 .socials a:hover
 {
-  color: #ff3300;
+  color: #ff3737;
 }
 
 #back-to-top:hover
 {
-  border: 2px solid #ff3300;
+  border: 2px solid #ff3737;
 }
 
 .divider {
@@ -213,8 +212,8 @@ iframe {
    filter: blur(35px);
 }
 .content {
-  background: rgba(37,37,37);
-  border-radius: 6px;
+  background: rgba(10,10,10);
+  border-radius: 20px;
   z-index: 100;
   margin-left: 15px;
   margin-right: 15px;
@@ -317,14 +316,16 @@ a {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  background-color: #1d1d1d;
+  background-color: #0b0b0b;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .link {
   font-weight: 700;
+  font-size: 15px;
   color: #ffcb30 !important;
+  line-height: 30px;
 }
 
 .link:hover {
@@ -359,9 +360,27 @@ p.genre-label {
   margin-top: 5px;
 }
 
-.desc img {
-  margin-top: 10px;
-  border-radius: 8px;
+.image-crop {
+  height: 260px;
+  display: flex;
+}
+
+.item img {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fit-bottom {
+  object-position: bottom;
+}
+
+.fit-center {
+  object-position: center;
+}
+.fit-top {
+  object-position: top
 }
 
 .item h3 {
@@ -378,10 +397,9 @@ p.genre-label {
 }
 
 .desc {
-    background: #222;
-    padding: 10px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 40px;
 }
 
 .item .img-container img {
@@ -444,13 +462,11 @@ video {
 #footer {
   color: #75797d;
   font-size: 12px;
-  padding: 20px;
+  padding-top: 20px;
   padding-bottom: 0;
 }
 
 p.disclaimer {
-  padding-right: 20px;
-  padding-left: 20px;
   font-size: 10px;
   color: #75797d;
   line-height: 1.3em;
@@ -497,7 +513,7 @@ p.disclaimer {
   }
 
   .item h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .socials a {
