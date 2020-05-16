@@ -370,10 +370,6 @@ p.genre-label {
   margin-top: 5px;
 }
 
-.image-crop {
-  display: flex;
-}
-
 .item img {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -491,6 +487,7 @@ p.disclaimer {
   }
 
   .image-crop {
+    display: flex;
     height: 260px;
   }
 
