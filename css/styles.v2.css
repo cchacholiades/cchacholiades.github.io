@@ -183,15 +183,15 @@ iframe {
   border: 2px solid #ff3737;
 }
 
-.image-transition {
+.desktop--browser .image-transition {
   overflow: hidden;
 }
 
-.image-transition img {
+.desktop--browser .image-transition img {
    transition: all 0.2s;
 }
 
-.image-transition img:hover {
+.desktop--browser .image-transition img:hover {
   transform: scale(1.1);
 }
 
