@@ -507,6 +507,20 @@ p.disclaimer {
     font-size: 2em;
   }
 
+  .nav-fixed {
+    top: 20px;
+    left: 20px;
+    right: initial;
+    padding: 20px !important;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .nav-fixed a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   p {
     font-size: 1.2em;
     line-height: 1.8em;
