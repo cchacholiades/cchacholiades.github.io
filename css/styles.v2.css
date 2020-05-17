@@ -214,16 +214,6 @@ iframe {
 }
 
 .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   z-index: 10;
   position: relative;
 }
@@ -358,12 +348,13 @@ p.genre-label {
   color: white;
   font-size: 11px;
   background: #464646;
-  width: fit-content;
+  min-width: 75px;
   padding: 8px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 8px;
   font-weight: bold;
+  line-height: 1.3em;
   margin-left: auto;
   margin-right: 10px;
   text-align: center;
@@ -404,6 +395,7 @@ p.genre-label {
   font-size: 0.8em;
   font-weight: 900;
   letter-spacing: 1.2px;
+  line-height: 1.4em;
   margin-left: 10px;
   margin-right: 10px;
   display: flex;
