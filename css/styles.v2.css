@@ -22,6 +22,10 @@ img {
   width: 100%;
 }
 
+img.lazyload:not([src]) {
+  visibility: hidden;
+}
+
 .hidden {
   display: none !important;
 }
