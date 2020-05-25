@@ -2,7 +2,9 @@ var body = $('body');
 
 var scrolled = false;
 
-$(window).scroll(function() {
+$(window).scroll(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
     if ($(window).scrollTop() > 10 && scrolled == false) {
         $('.bg').addClass('blur-bg');
         scrolled = true;
@@ -25,7 +27,7 @@ function isScrolledIntoView(elem)
 
 $(window).on('scroll', function(e) {
     e.preventDefault();
-    e.stopPropagation()
+    e.stopPropagation();
     var el = $('#scrolled-nav');
     var cls = 'hidden';
     var cond = el.hasClass(cls);
@@ -51,7 +53,7 @@ function toggle_back_to_top_visibility() {
     }
 }
 
-$('.nav a').on('click', function() {
+$('.nav a').on('click', function(e) {
     $('.nav a').removeClass('selected');
 
     let link_id = $(this).attr('href');
