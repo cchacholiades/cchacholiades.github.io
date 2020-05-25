@@ -23,7 +23,9 @@ function isScrolledIntoView(elem)
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function(e) {
+    e.preventDefault();
+    e.stopPropagation()
     var el = $('#scrolled-nav');
     var cls = 'hidden';
     var cond = el.hasClass(cls);
