@@ -541,6 +541,11 @@ a {
   line-height: 48px;
 }
 
+
+a.inline-link.link {
+    line-height: 1.8em;
+}
+
 .link:hover {
   text-decoration: underline;
 }
