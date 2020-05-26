@@ -47,6 +47,8 @@
   <link rel="stylesheet" href="libs/PhotoSwipe/photoswipe.min.css">
   <link rel="stylesheet" href="libs/PhotoSwipe/default-skin/default-skin.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
+  <link rel="stylesheet" href="css/plyr.min.css">
   <link rel="stylesheet" href="css/styles.min.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -296,29 +298,30 @@
         </div>
 
         <div class="content-block music">
-          <!-- <h2>Music</h2> -->
-
-          <div class="item-music">
-            <iframe title="Awakening by Stefanos Yiassemides on Soundcloud" height="20" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/508956837&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=false"></iframe>
+          <div class="container">
+              <div class="column add-bottom">
+                  <div id="mainwrap">
+                      <div id="nowPlay">
+                          <span id="npTitle"></span>
+                      </div>
+                      <div id="audiowrap">
+                          <div id="audio0">
+                              <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                          </div>
+                          <div id="tracks">
+                              <a id="btnPrev">&lt;</a><a id="btnNext">&gt;</a>
+                          </div>
+                      </div>
+                      <div id="plwrap">
+                          <ul id="plList"></ul>
+                      </div>
+                  </div>
+              </div>
           </div>
 
-          <div class="item-music">
-            <iframe title="It Will Find You - Main theme by Stefanos Yiassemides on Soundcloud" height="20" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/699606820&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=false
-            "></iframe>
-          </div>
-
-          <div class="item-music">
-            <iframe title="Voices by Stefanos Yiassemides on Soundcloud" height="20" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337532691&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=false"></iframe>
-          </div>
-
-          <div class="item-music">
-            <iframe title="Journey home by Stefanos Yiassemides on Soundcloud" height="20" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/306651852&amp;color=%23ff5500&amp;inverse=true&amp;auto_play=false&amp;show_user=false"></iframe>
-          </div>
         </div>
 
         <div class="content-block about">
-          <!-- <h2>About</h2> -->
-
           <p>
             Born and raised in the Mediterranean island of Cyprus, I am a Greek/Cypriot music composer currently based in Bristol, UK. At the age of 13 I picked my first instrument and started studying and practicing the art of music. Since then,
             playing and writing music has been my lifelong passion. To date, I have produced music in a vast variety of styles.
@@ -380,6 +383,9 @@
     <!-- site scripts -->
     <script src="libs/jquery-3.5.1.min.js"></script>
     <script src="libs/lazysizes.min.js" async></script>
+    <script src="libs/html5media.min.js" async></script>
+    <script src="libs/plyr.min.js" async></script>
+    <script src="js/custom-audio.min.js"></script>
     <script src="libs/PhotoSwipe/photoswipe.min.js"></script>
     <script src="libs/PhotoSwipe/photoswipe-ui-default.min.js"></script>
     <script>
