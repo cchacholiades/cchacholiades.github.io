@@ -263,11 +263,11 @@ iframe {
 }
 
 .text p {
-    margin: 0;
-    margin-top: 5px;
-    padding: 0;
-    font-size: 0.9em;
-    text-shadow: 0 0 8px #00000087;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 0.9em;
+  text-shadow: 0 0 8px #00000087;
 }
 
 .text h1 {
