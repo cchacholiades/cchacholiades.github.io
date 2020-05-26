@@ -98,6 +98,7 @@ jQuery(function ($) {
                         audio.play();
                     }
                 } else {
+                    $('#plList li').removeClass('font-red');
                     audio.pause();
                     index = 0;
                     loadTrack(index);
