@@ -220,7 +220,7 @@ iframe {
 }
 
 .font-red {
-  color: #ff3737;
+  color: #ff3737 !important;
 }
 .contact,
 footer a,
