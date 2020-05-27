@@ -137,3 +137,10 @@ a.plyr__controls__item.plyr__control:hover,
 .plyr--audio .plyr__progress--buffer {
   color: rgba(0, 0, 0, .1);
 }
+@media only screen and (max-width:600px) {
+  #nowPlay span#npTitle {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
