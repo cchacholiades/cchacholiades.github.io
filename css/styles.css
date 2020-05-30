@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: 700, 800;
   src: url(../fonts/open_sans/OpenSans-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 700;
   src: url(../fonts/permanent_marker/PermanentMarker-Regular.ttf) format('truetype');
+  font-display: swap;
 }
 
 *,
