@@ -57,6 +57,10 @@ body {
   margin-bottom: 10px;
 }
 
+.platforms i {
+  margin-left: 3px;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
