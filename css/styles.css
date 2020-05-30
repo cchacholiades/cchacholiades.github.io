@@ -52,6 +52,11 @@ body {
   font-smoothing: antialiased;
 }
 
+.platforms {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
