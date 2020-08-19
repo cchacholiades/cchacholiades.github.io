@@ -1,5 +1,5 @@
 var body = $('body');
-
+var carousel_index = 0;
 var scrolled = false;
 
 $(window).scroll(function(e) {
@@ -13,6 +13,57 @@ $(window).scroll(function(e) {
         scrolled = false;
     }
 });
+
+// function testimonials_carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("testimonial_slide");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   carousel_index++;
+//   if (carousel_index > x.length) {carousel_index = 1}
+//   x[carousel_index-1].style.display = "block";
+//   setTimeout(testimonials_carousel, 15000); // Change image every 15 seconds
+// }
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("testimonial_slide");
+  var dots = document.getElementsByClassName("circle-dot");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" circle-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " circle-white";
+}
+
+function create_carousel_dots() {
+    var total_slides = $('.testimonial_slide');
+
+    var html = '';
+    for (i = 0; i < total_slides.length; i++) {
+        html += '<span class="circle-dot" onclick="currentDiv('+ total_slides[i].length+1 +')"></span>';
+    }
+
+    $('.carousel_dots_wrap').append(html);
+}
+
 
 function isScrolledIntoView(elem)
 {
@@ -78,6 +129,9 @@ $(document).ready(function() {
     }
 
     toggle_back_to_top_visibility();
+
+    // create_carousel_dots();
+    // testimonials_carousel();
 
     // assume no mobile, init as false
     var isMobile = false;
