@@ -56,27 +56,17 @@ img {
   display: block;
 }
 
-.carousel_dots_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+.glider-dot {
+  background: #ffcb30!important;
 }
 
-span.circle-dot {
-  height: 13px;
-  width: 13px;
-  padding: 0;
-  border-radius: 50%;
-  margin-right: 5px;
-  border: 1px solid #ccc!important;
+.glider-dot.active {
+  background: #ff3737!important;
 }
 
-.circle-white, .circle-hover-white:hover{
-  color: #000!important;
-  background-color: #fff!important;
+.glider-dots {
+  margin-top: 20px !important;
 }
-
 
 img.lazyload:not([src]) {
   visibility: hidden;
