@@ -74,6 +74,7 @@ img {
 
 .glider-slide p {
   padding: 20px;
+  font-style: italic;
 }
 
 img.lazyload:not([src]) {
