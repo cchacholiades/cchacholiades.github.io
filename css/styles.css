@@ -68,6 +68,14 @@ img {
   margin-top: 20px !important;
 }
 
+.glider-slide {
+  text-align: center;
+}
+
+.glider-slide p {
+  padding: 20px;
+}
+
 img.lazyload:not([src]) {
   visibility: hidden;
 }
